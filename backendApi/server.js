@@ -17,7 +17,7 @@ app.use("/user", userRoute);
 mongoose
   .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
   .then(() => console.log("Db Connected"))
-  .catch(err => console.log(process.env.MONGO_URI));
+  .catch((err) => console.log(process.env.MONGO_URI));
 
 // app.get("/user/auth", (req, res) => {
 //   //const { email,password} = req.body;

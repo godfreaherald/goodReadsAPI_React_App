@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 import * as actions from "../../actions/user";
 
-const HomePage = ({ isAuthenticated, logout }) => {
+export const HomePage = ({ isAuthenticated, logout }) => {
   return (
     <div>
       <h1> HomePage</h1>

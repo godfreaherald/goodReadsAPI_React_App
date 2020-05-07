@@ -5,7 +5,7 @@ export const loginUser = user => {
   return { type: USER_LOGGED_IN, user };
 };
 
-const logoutUser = () => {
+export const logoutUser = () => {
   return { type: USER_LOGGED_OUT };
 };
 
