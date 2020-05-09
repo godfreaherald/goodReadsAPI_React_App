@@ -3,7 +3,7 @@ const request = require("supertest");
 const expect = require("chai").expect;
 import "babel-polyfill";
 const app = require("../server.js");
-const host = "http://localhost:8080";
+const host = app;
 describe("api/users", () => {
   beforeEach(async () => {
     await User.deleteOne({ email: "test508@gmail.com" });
