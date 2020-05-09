@@ -3,8 +3,9 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const uniqueValidator = require("mongoose-unique-validator");
-const secret = process.env.SECRET_KEY;
-
+//const secret = process.env.SECRET_KEY;
+const secret = "secret";
+console.log(secret);
 const HOST = process.env.HOST;
 
 const userSchema = new mongoose.Schema(
@@ -12,7 +13,7 @@ const userSchema = new mongoose.Schema(
     email: { type: String, required: true, unique: true },
     isConfirmed: { type: Boolean, default: false },
     confirmationToken: { type: String, default: "" },
-    passwordHash: { type: String, required: true }
+    passwordHash: { type: String, required: true },
   },
   { timestamps: true }
 );
@@ -53,7 +54,7 @@ userSchema.methods.toJsonAuth = function toJsonAuth() {
   return {
     email: this.email,
     isConfirmed: this.isConfirmed,
-    token: this.jwtGenerator()
+    token: this.jwtGenerator(),
   };
 };
 

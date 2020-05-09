@@ -1,8 +1,5 @@
 const router = require("express").Router();
-const jwt = require("jsonwebtoken");
-const User = require("../models/user");
-const mailer = require("../emails/mailer");
-const parseError = require("../utils/parseError");
+
 const userController = require("../controllers/userController");
 
 router.post("/signup", userController.signUp);

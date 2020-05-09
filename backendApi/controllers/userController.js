@@ -1,4 +1,8 @@
 const User = require("../models/user");
+const jwt = require("jsonwebtoken");
+
+const mailer = require("../emails/mailer");
+const parseError = require("../utils/parseError");
 const secret = process.env.SECRET_KEY;
 
 exports.signUp = (req, res) => {
