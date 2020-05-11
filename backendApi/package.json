@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon  --exec babel-node server.js",
-    "test": "mocha --require @babel/register  --timeout 20000"
+    "test": "mocha --require @babel/register  --timeout 20000",
+    "coverage": "nyc --reporter=html  --reporter=text mocha --require @babel/register --exit --timeout 20000",
+    "reporter":"mocha --require @babel/register --exit --timeout 20000 --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
@@ -38,6 +40,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^3.1.3",
+    "mochawesome": "^6.1.1",
     "nodemon": "^2.0.3",
     "nyc": "^15.0.1",
     "prettier": "^2.0.5"
