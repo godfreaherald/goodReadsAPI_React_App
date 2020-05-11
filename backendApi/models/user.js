@@ -27,9 +27,11 @@ userSchema.methods.setPassword = function setPassword(password) {
 userSchema.methods.setConfirmationToken = function setConfirmationToken() {
   console.log("test set COnfrimation TOken");
   this.confirmationToken = this.jwtGenerator();
+  logger.info("ConfirmationToken created ");
 };
 
 userSchema.methods.generateConfirmationURL = function generateConfirmationURL() {
+  logger.info("ConfirmationURL generated ");
   return `${HOST}/confirmation/${this.confirmationToken}`;
 };
 
@@ -42,11 +44,11 @@ userSchema.methods.isValidEmail = function isValidEmail(password) {
 };
 
 userSchema.methods.jwtGenerator = function jwtGenerator() {
-  console.log("test jwt creation during registration");
+  logger.info("Jwt Token generated ");
   return jwt.sign({ email: this.email, isConfirmed: this.isConfirmed }, secret);
 };
 userSchema.methods.hasExpiryJwtGenerator = function hasExpiryJwtGenerator() {
-  console.log("test jwt creation during registration");
+  logger.info("Jwt Token with expiry generated ");
   return jwt.sign({ _id: this._id }, secret, { expiresIn: "1h" });
 };
 
@@ -60,6 +62,6 @@ userSchema.methods.toJsonAuth = function toJsonAuth() {
 
 userSchema.plugin(uniqueValidator, { message: "Email already taken" });
 
-// export default mongoose.model("User", userSchema); to use in es6 with babel
+export default mongoose.model("User", userSchema); //to use in es6 with babel
 
-module.exports = mongoose.model("User", userSchema); // es5
+//module.exports = mongoose.model("User", userSchema); // es5

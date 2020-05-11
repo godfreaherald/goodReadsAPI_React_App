@@ -14,7 +14,8 @@ exports.signUp = (req, res) => {
   User.findOne({ email: email })
     .then((user) => {
       if (user) {
-        console.log("Email already exists");
+        //console.log("Email already exists");
+        logger.error("Email already exists");
         res.status(400).json({ errors: { global: "Email already exists" } });
         //return res.status(400).json({ errors: "Email already exists" });
       }
@@ -27,19 +28,25 @@ exports.signUp = (req, res) => {
         .save()
         .then((createdUser) => {
           mailer.sendConfirmationEmail(createdUser);
+          logger.info("User created");
           console.log("User created");
           console.log(createdUser.toJsonAuth());
+          logger.info(createdUser.toJsonAuth());
           res.status(201).json({ user: createdUser.toJsonAuth() });
         })
         .catch((err) => {
           console.log("Error occuered");
+          logger.error("Error occuered");
+          logger.error(parseError(err));
           console.log(err);
           res.json({ errors: parseError(err) });
         });
     })
     .catch((err) => {
       console.log(err);
+      logger.error(err);
       res.json({ errors: "Something went wrong while signing up." });
+      logger.info("Something went wrong while signing up.");
     });
 };
 
@@ -57,12 +64,14 @@ exports.confirmEmail = (req, res) => {
           .then((userRecord) => {
             res.status(200).json({ user: userRecord.toJsonAuth() });
           })
-          .catch((err) =>
+          .catch((err) => {
+            logger.error(err);
             res.json({
               errors: { global: "Something went wrong while confirming." },
-            })
-          );
+            });
+          });
       } else {
+        logger.info("Confirmation Token Doesnt Exist");
         res
           .status(400)
           .json({ errors: { global: "Confirmation Token Doesnt Exist" } });
@@ -71,6 +80,7 @@ exports.confirmEmail = (req, res) => {
 
     .catch((err) => {
       console.log(err);
+      logger.error(err);
       res.json({ errors: "Something went wrong while signing up." });
     });
 };
@@ -91,6 +101,7 @@ exports.requestPasswordReset = (req, res) => {
 
     .catch((err) => {
       console.log(err);
+      logger.error(err);
       res.json({ errors: "Something went wrong while sending mail." });
     });
 };
@@ -101,6 +112,7 @@ exports.resetPassword = (req, res) => {
 
   jwt.verify(token, secret, (err, decoded) => {
     if (err) {
+      logger.error(err);
       res
         .status(400)
         .json({ errors: { global: "Error occured while reseting passsword" } });
@@ -117,6 +129,7 @@ exports.resetPassword = (req, res) => {
           }
         })
         .catch((err) => {
+          logger.error(err);
           console.log(err);
           res.json({
             errors: "Something went wrong while resetting password.",

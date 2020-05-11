@@ -2,10 +2,12 @@
 //const mongoose = require("mongoose");
 //const dotenv = require("dotenv")
 import express from "express";
+import morgan from "morgan";
 import mongoose from "mongoose";
 import "dotenv/config";
 //const cors = require("cors");
 import cors from "cors";
+import logger from "./winston.config";
 //dotenv.config();
 const app = express();
 
@@ -14,6 +16,26 @@ const authRoute = require("./routes/auth");
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+const env = process.env.NODE_ENV;
+const morganFormat = env !== "production" ? "dev" : "combined";
+
+app.use(
+  morgan(morganFormat, {
+    SKIP: function (req, res) {
+      return res.statusCode < 400;
+    },
+    stream: process.stderr,
+  })
+);
+
+app.use(
+  morgan(morganFormat, {
+    SKIP: function (req, res) {
+      return res.statusCode >= 400;
+    },
+    stream: process.stdout,
+  })
+);
 
 app.use("/user/auth", authRoute);
 app.use("/user", userRoute);
@@ -37,8 +59,14 @@ app.use("/user", userRoute);
 
 mongoose
   .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
-  .then(() => console.log("Db Connected"))
-  .catch((err) => console.log(err));
+  .then(() => {
+    console.log("Db Connected");
+    logger.info("Db Connected");
+  })
+  .catch((err) => {
+    logger.error("Db Connection error " + err);
+    console.log(err);
+  });
 
 app.listen(8080, console.log("App running"));
 
