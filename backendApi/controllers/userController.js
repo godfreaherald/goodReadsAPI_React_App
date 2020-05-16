@@ -1,6 +1,6 @@
 const User = require("../models/user");
 const jwt = require("jsonwebtoken");
-
+import logger from "../winston.config";
 const mailer = require("../emails/mailer");
 const parseError = require("../utils/parseError");
 const secret = process.env.SECRET_KEY;

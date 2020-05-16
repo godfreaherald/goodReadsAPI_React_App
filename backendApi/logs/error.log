@@ -1,1 +1,29 @@
 2020-05-11 09:01:24 error: 	Db Connected 
+2020-05-12 08:54:59 error: 	Email already exists 
+2020-05-12 08:55:01 error: 	Error occuered 
+2020-05-12 08:55:01 error: 	[object Object] 
+2020-05-13 07:09:11 error: 	Email already exists 
+2020-05-13 07:09:14 error: 	Error occuered 
+2020-05-13 07:09:14 error: 	[object Object] 
+2020-05-15 04:37:36 error: 	Db Connection error MongoNetworkError: failed to connect to server [cluster0-shard-00-01-tupjt.mongodb.net:27017] on first connect [MongoNetworkError: connection timed out
+    at connectionFailureError (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:406:14)
+    at TLSSocket.<anonymous> (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:294:16)
+    at Object.onceWrapper (events.js:416:28)
+    at TLSSocket.emit (events.js:310:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.Socket._onTimeout (net.js:479:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7) {
+  [Symbol(mongoErrorContextSymbol)]: {}
+}] 
+2020-05-15 04:38:39 error: 	Db Connection error MongoNetworkError: failed to connect to server [cluster0-shard-00-01-tupjt.mongodb.net:27017] on first connect [MongoNetworkError: connection timed out
+    at connectionFailureError (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:406:14)
+    at TLSSocket.<anonymous> (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:294:16)
+    at Object.onceWrapper (events.js:416:28)
+    at TLSSocket.emit (events.js:310:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.Socket._onTimeout (net.js:479:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7) {
+  [Symbol(mongoErrorContextSymbol)]: {}
+}] 

@@ -7,8 +7,10 @@ class AddNewBookPage extends React.Component {
   state = {
     book: null,
   };
-
-  onBookSelect = (book) => this.setState({ book });
+  onBookSelect = (book) => {
+    console.log(book);
+    this.setState({ book });
+  };
 
   submit = (data) => {
     console.log(data);

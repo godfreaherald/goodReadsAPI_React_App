@@ -1,3 +1,136 @@
 2020-05-11 09:00:37 info: 	Db Connected 
 2020-05-11 09:01:24 error: 	Db Connected 
 2020-05-11 09:15:01 info: 	Db Connected 
+2020-05-11 10:08:49 info: 	Db Connected 
+2020-05-11 10:12:48 info: 	Db Connected 
+2020-05-11 10:16:15 info: 	Db Connected 
+2020-05-12 08:39:44 info: 	Db Connected 
+2020-05-12 08:40:31 info: 	Db Connected 
+2020-05-12 08:46:09 info: 	Db Connected 
+2020-05-12 08:54:09 info: 	Db Connected 
+2020-05-12 08:54:13 info: 	Jwt Token generated  
+2020-05-12 08:54:13 info: 	ConfirmationToken created  
+2020-05-12 08:54:15 info: 	ConfirmationURL generated  
+2020-05-12 08:54:51 info: 	Db Connected 
+2020-05-12 08:54:59 error: 	Email already exists 
+2020-05-12 08:55:00 info: 	Jwt Token generated  
+2020-05-12 08:55:00 info: 	ConfirmationToken created  
+2020-05-12 08:55:01 error: 	Error occuered 
+2020-05-12 08:55:01 error: 	[object Object] 
+2020-05-12 08:55:09 info: 	Jwt Token generated  
+2020-05-12 08:55:09 info: 	ConfirmationToken created  
+2020-05-12 08:55:10 info: 	ConfirmationURL generated  
+2020-05-12 08:55:10 info: 	User created 
+2020-05-12 08:55:10 info: 	Jwt Token generated  
+2020-05-12 08:55:10 info: 	Jwt Token generated  
+2020-05-12 08:55:10 info: 	[object Object] 
+2020-05-12 08:55:10 info: 	Jwt Token generated  
+2020-05-13 07:03:11 info: 	Db Connected 
+2020-05-13 07:03:34 info: 	Jwt Token generated  
+2020-05-13 07:06:03 info: 	Jwt Token generated  
+2020-05-13 07:06:03 info: 	ConfirmationToken created  
+2020-05-13 07:06:07 info: 	ConfirmationURL generated  
+2020-05-13 07:06:07 info: 	User created 
+2020-05-13 07:06:07 info: 	Jwt Token generated  
+2020-05-13 07:06:07 info: 	Jwt Token generated  
+2020-05-13 07:06:07 info: 	[object Object] 
+2020-05-13 07:06:07 info: 	Jwt Token generated  
+2020-05-13 07:09:11 error: 	Email already exists 
+2020-05-13 07:09:11 info: 	Jwt Token generated  
+2020-05-13 07:09:11 info: 	ConfirmationToken created  
+2020-05-13 07:09:14 error: 	Error occuered 
+2020-05-13 07:09:14 error: 	[object Object] 
+2020-05-13 07:09:19 info: 	Jwt Token generated  
+2020-05-13 07:09:19 info: 	ConfirmationToken created  
+2020-05-13 07:09:20 info: 	ConfirmationURL generated  
+2020-05-13 07:09:20 info: 	User created 
+2020-05-13 07:09:20 info: 	Jwt Token generated  
+2020-05-13 07:09:20 info: 	Jwt Token generated  
+2020-05-13 07:09:20 info: 	[object Object] 
+2020-05-13 07:09:20 info: 	Jwt Token generated  
+2020-05-13 07:15:12 info: 	Db Connected 
+2020-05-13 07:15:32 info: 	Db Connected 
+2020-05-13 07:15:50 info: 	Jwt Token generated  
+2020-05-13 07:15:50 info: 	ConfirmationToken created  
+2020-05-13 07:15:53 info: 	ConfirmationURL generated  
+2020-05-13 07:15:53 info: 	User created 
+2020-05-13 07:15:53 info: 	Jwt Token generated  
+2020-05-13 07:15:53 info: 	Jwt Token generated  
+2020-05-13 07:15:53 info: 	[object Object] 
+2020-05-13 07:15:53 info: 	Jwt Token generated  
+2020-05-13 07:16:36 info: 	Jwt Token generated  
+2020-05-13 09:25:12 info: 	Db Connected 
+2020-05-13 09:25:32 info: 	Db Connected 
+2020-05-13 09:25:36 info: 	Db Connected 
+2020-05-13 09:27:49 info: 	Db Connected 
+2020-05-13 09:28:01 info: 	Db Connected 
+2020-05-13 09:28:22 info: 	Db Connected 
+2020-05-13 09:29:10 info: 	Db Connected 
+2020-05-13 09:30:05 info: 	Db Connected 
+2020-05-13 09:30:31 info: 	Db Connected 
+2020-05-13 09:31:35 info: 	Db Connected 
+2020-05-13 09:32:34 info: 	Db Connected 
+2020-05-13 09:39:23 info: 	Db Connected 
+2020-05-13 09:45:02 info: 	Db Connected 
+2020-05-13 09:46:08 info: 	Db Connected 
+2020-05-13 09:47:07 info: 	Db Connected 
+2020-05-13 09:47:10 info: 	Db Connected 
+2020-05-13 09:48:33 info: 	Db Connected 
+2020-05-13 09:51:46 info: 	Db Connected 
+2020-05-13 09:51:57 info: 	Db Connected 
+2020-05-13 10:08:12 info: 	Db Connected 
+2020-05-13 10:08:16 info: 	Db Connected 
+2020-05-13 10:08:40 info: 	Db Connected 
+2020-05-13 10:11:49 info: 	Db Connected 
+2020-05-13 10:13:32 info: 	Db Connected 
+2020-05-13 10:34:28 info: 	Db Connected 
+2020-05-13 10:37:38 info: 	Db Connected 
+2020-05-13 10:46:56 info: 	Db Connected 
+2020-05-13 10:52:24 info: 	Db Connected 
+2020-05-13 10:52:41 info: 	Db Connected 
+2020-05-13 10:56:34 info: 	Db Connected 
+2020-05-13 10:57:17 info: 	Db Connected 
+2020-05-14 07:41:25 info: 	Db Connected 
+2020-05-14 07:45:50 info: 	Jwt Token generated  
+2020-05-14 07:45:50 info: 	ConfirmationToken created  
+2020-05-14 07:45:52 info: 	ConfirmationURL generated  
+2020-05-14 07:45:52 info: 	User created 
+2020-05-14 07:45:52 info: 	Jwt Token generated  
+2020-05-14 07:45:52 info: 	Jwt Token generated  
+2020-05-14 07:45:52 info: 	[object Object] 
+2020-05-14 07:45:52 info: 	Jwt Token generated  
+2020-05-14 07:46:26 info: 	Jwt Token generated  
+2020-05-14 08:09:14 info: 	Db Connected 
+2020-05-14 08:09:27 info: 	Db Connected 
+2020-05-14 08:10:54 info: 	Db Connected 
+2020-05-14 08:15:10 info: 	Db Connected 
+2020-05-14 08:19:33 info: 	Db Connected 
+2020-05-14 08:20:58 info: 	Db Connected 
+2020-05-14 08:21:03 info: 	Db Connected 
+2020-05-14 08:23:05 info: 	Db Connected 
+2020-05-14 08:24:10 info: 	Db Connected 
+2020-05-14 08:59:40 info: 	Db Connected 
+2020-05-15 04:37:36 error: 	Db Connection error MongoNetworkError: failed to connect to server [cluster0-shard-00-01-tupjt.mongodb.net:27017] on first connect [MongoNetworkError: connection timed out
+    at connectionFailureError (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:406:14)
+    at TLSSocket.<anonymous> (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:294:16)
+    at Object.onceWrapper (events.js:416:28)
+    at TLSSocket.emit (events.js:310:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.Socket._onTimeout (net.js:479:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7) {
+  [Symbol(mongoErrorContextSymbol)]: {}
+}] 
+2020-05-15 04:38:39 error: 	Db Connection error MongoNetworkError: failed to connect to server [cluster0-shard-00-01-tupjt.mongodb.net:27017] on first connect [MongoNetworkError: connection timed out
+    at connectionFailureError (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:406:14)
+    at TLSSocket.<anonymous> (/Users/godfrey/Documents/MYPROJECTS/JAVASCRIPT/FULLSTACK/goodReadsAPI_React_App/backendApi/node_modules/mongodb/lib/core/connection/connect.js:294:16)
+    at Object.onceWrapper (events.js:416:28)
+    at TLSSocket.emit (events.js:310:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.Socket._onTimeout (net.js:479:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7) {
+  [Symbol(mongoErrorContextSymbol)]: {}
+}] 
+2020-05-15 04:40:24 info: 	Db Connected 
+2020-05-16 08:40:26 info: 	Db Connected 

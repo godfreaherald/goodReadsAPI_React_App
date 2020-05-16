@@ -17,6 +17,19 @@ class BookForm extends React.Component {
     index: 0,
   };
 
+  UNSAFE_componentWillReceiveProps(props) {
+    this.setState({
+      data: {
+        goodreadsId: props.book.goodreadsId,
+        title: props.book.title,
+        authors: props.book.authors,
+        cover: props.book.covers[0],
+        pages: props.book.pages,
+      },
+      covers: props.book.covers,
+    });
+  }
+
   changeCover = () => {
     const { index, covers } = this.state;
     const newIndex = index + 1 >= covers.length ? 0 : index + 1;

@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 // import mongoose from "mongoose"; to be used in es6 with babel
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+import logger from "../winston.config";
 const uniqueValidator = require("mongoose-unique-validator");
 //const secret = process.env.SECRET_KEY;
 const secret = "secret";
@@ -62,6 +63,7 @@ userSchema.methods.toJsonAuth = function toJsonAuth() {
 
 userSchema.plugin(uniqueValidator, { message: "Email already taken" });
 
-export default mongoose.model("User", userSchema); //to use in es6 with babel
+//export default mongoose.model("User", userSchema); //to use in es6 with babel
 
-//module.exports = mongoose.model("User", userSchema); // es5
+module.exports = mongoose.model("User", userSchema); // es5
+//export default mongoose.model("User", schema);
